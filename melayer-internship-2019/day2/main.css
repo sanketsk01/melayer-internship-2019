@@ -1,0 +1,20 @@
+.btn-1{
+    display: flex;
+    justify-content:space-between;
+}
+.btn-3{
+    text-align: center;
+}
+.btn-4{
+    text-align: center;
+    
+}
+.btn-5{
+    text-align: center;
+
+}
+.btn-8{
+    
+    display: flex;
+    justify-content: space-between;
+}
