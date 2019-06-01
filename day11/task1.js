@@ -1,7 +1,10 @@
-var printer = document.getElementById("print-button");
+function printDiv(divName) {
+  var printContents = document.getElementById(divName).innerHTML;
+  var originalContents = document.body.innerHTML;
 
-function printPage() {
+  document.body.innerHTML = printContents;
+
   window.print();
-}
 
-printer.addEventListener("click", printPage);
+  document.body.innerHTML = originalContents;
+}
