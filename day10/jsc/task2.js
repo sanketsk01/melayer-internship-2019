@@ -1,0 +1,9 @@
+function load()
+{
+
+    window.print();
+
+
+
+
+}
