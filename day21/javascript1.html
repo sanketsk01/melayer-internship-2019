@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>storing values with assigned operators</title>
+    <title>uninitialize value with assigned operator</title>
 </head>
 <body>
     <script>
-        var a;
-        var b  = 2;
-        console.log("a");
-        a = 7;
-        b=a;
+        var a = 5;
+        var b = 10;
+        var c = "i am a ";
 
-        console.log(a)
+        a = a + 1;
+        b = b + 5;
+        c = c + "string";
         </script>
 </body>
 </html>
