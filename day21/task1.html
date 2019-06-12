@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="task1.js">
+    <select id="select">
+            <option value="default">default</option>
+        </select>
+        
+        <script>
+            
+            var select = document.getElementById("select"),
+                     arr = ["html","css","java","javascript","php","c++","node.js","ASP","JSP","SQL"];
+             
+             for(var i = 0; i < arr.length; i++)
+             {
+                 var option = document.createElement("OPTION"),
+                     txt = document.createTextNode(arr[i]);
+                 option.appendChild(txt);
+                 option.setAttribute("value",arr[i]);
+                 select.insertBefore(option,select.lastChild);
+             }
+             
+        </script>
+    
+</body>
+</html>
